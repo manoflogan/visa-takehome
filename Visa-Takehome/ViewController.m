@@ -85,7 +85,7 @@
     NSString* date = [suitableDate firstObject];
     NSString* freq = [suitableDate objectAtIndex:1];
     NSString* url =
-        [NSString stringWithFormat:@"https://www.alphavantage.co/query?function=%@&symbol=%@&apikey=AU8JM02UC0OUR0Q4&outputsize=1m",
+        [NSString stringWithFormat:@"https://www.alphavantage.co/query?function=%@&symbol=%@&apikey=AU8JM02UC0OUR0Q4&interval=1min",
         freq, self.stockField.text];
     NSURL* nsUrl = [[NSURL alloc] initWithString:url];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:nsUrl];
